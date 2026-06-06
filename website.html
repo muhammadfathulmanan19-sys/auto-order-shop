@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALYA STORE - Solusi Digital Terlengkap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1',
+                        secondary: '#EC4899',
+                        dark: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.2);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-dark to-slate-900 text-white font-sans min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary text-gradient">
+                ALYA STORE
+            </h1>
+            <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20ingin%20order" target="_blank" 
+               class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full font-semibold flex items-center gap-2 transition-all shadow-lg hover:shadow-green-500/50">
+                <i class="fab fa-whatsapp text-xl"></i> Hubungi Admin
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4 text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Layanan Digital Terlengkap</h2>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto">Mulai dari Panel Sosmed, Nokos, Bot, hingga Top Up Game. Kualitas terbaik & proses tercepat hanya di ALYA STORE.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="pb-20 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Product 1: Auto Order Panel -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-primary mb-4"><i class="fas fa-server"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Auto Order Panel</h3>
+                <p class="text-slate-400 mb-6">Panel otomatis untuk order sosmed dengan fitur lengkap & stabil.</p>
+                <button onclick="showPrice(this, 'Mulai Rp 50.000 - Rp 150.000')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20order%20Auto%20Order%20Panel" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+            <!-- Product 2: Nokos -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-blue-400 mb-4"><i class="fas fa-mobile-alt"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Nokos / Number Virtual</h3>
+                <p class="text-slate-400 mb-6">Nomor virtual untuk verifikasi Telegram, WA, dan aplikasi lainnya.</p>
+                <button onclick="showPrice(this, 'Mulai Rp 2.000 - Rp 10.000')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20beli%20Nokos" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+            <!-- Product 3: Jasa Run Bot -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-green-400 mb-4"><i class="fas fa-code"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Jasa Run Bot</h3>
+                <p class="text-slate-400 mb-6">Jasa pasang & run script bot WhatsApp/Telegram agar 24 jam online.</p>
+                <button onclick="showPrice(this, 'Mulai Rp 15.000 / Bulan')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20jasa%20run%20bot" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+            <!-- Product 4: Jasa Sewa Bot -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-robot"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Jasa Sewa Bot</h3>
+                <p class="text-slate-400 mb-6">Sewa bot siap pakai dengan fitur lengkap, tinggal pakai saja.</p>
+                <button onclick="showPrice(this, 'Mulai Rp 10.000 - Rp 50.000 / Bulan')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20sewa%20bot" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+            <!-- Product 5: Aplikasi Premium -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-purple-400 mb-4"><i class="fas fa-download"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Aplikasi Premium</h3>
+                <p class="text-slate-400 mb-6">Kumpulan aplikasi berbayar versi mod & premium unlock semua fitur.</p>
+                <button onclick="showPrice(this, 'Mulai Rp 10.000 - Rp 30.000')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20beli%20aplikasi%20premium" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+            <!-- Product 6: Top Up All Game -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-red-400 mb-4"><i class="fas fa-gamepad"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Top Up All Game</h3>
+                <p class="text-slate-400 mb-6">Top up diamond & koin game terlengkap, proses instan & termurah.</p>
+                <button onclick="showPrice(this, 'Sesuai Nominal / Harga Promo')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20top%20up%20game" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+            <!-- Product 7: Jasa Suntik Sosmed -->
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 card-hover">
+                <div class="text-4xl text-pink-400 mb-4"><i class="fas fa-bullhorn"></i></div>
+                <h3 class="text-2xl font-bold mb-2">Jasa Suntik Sosmed</h3>
+                <p class="text-slate-400 mb-6">Tambah Followers, Like, Views, dan Comments semua sosmed.</p>
+                <button onclick="showPrice(this, 'Mulai Rp 1.000 - Rp 50.000')" 
+                        class="w-full bg-primary/20 hover:bg-primary/40 text-primary font-semibold py-3 rounded-xl transition-all mb-3">
+                    Lihat Harga
+                </button>
+                <a href="https://wa.me/628388637292?text=Halo%20Admin,%20saya%20mau%20jasa%20suntik%20sosmed" target="_blank"
+                   class="block w-full bg-gradient-to-r from-primary to-secondary text-center py-3 rounded-xl font-semibold hover:opacity-90 transition-all">
+                    Order Sekarang
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-6 text-center text-slate-400 border-t border-white/10">
+        <p>&copy; 2026 ALYA STORE - All Rights Reserved | Solusi Digital Terpercaya</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showPrice(button, priceText) {
+            // Ubah teks tombol menjadi harga
+            if(button.innerText.includes('Lihat Harga')) {
+                button.innerHTML = `<i class="fas fa-tag mr-2"></i> ${priceText}`;
+                button.classList.remove('bg-primary/20', 'hover:bg-primary/40');
+                button.classList.add('bg-green-500/20', 'text-green-400');
+            } else {
+                button.innerHTML = 'Lihat Harga';
+                button.classList.remove('bg-green-500/20', 'text-green-400');
+                button.classList.add('bg-primary/20', 'hover:bg-primary/40');
+            }
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
